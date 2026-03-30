@@ -56,7 +56,7 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     import tensorflow as tf
-    nn_model = tf.keras.models.load_model('model2_nn.h5')
+    nn_model = tf.keras.models.load_model('model2_nn.keras')
     with open('scaler.pkl', 'rb') as f:
         scaler = pickle.load(f)
     with open('label_encoders.pkl', 'rb') as f:
